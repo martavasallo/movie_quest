@@ -4,9 +4,17 @@ Welcome to MovieQuest App! This application enables users to search for movies a
 
 ## Screenshots
 
-![Screenshot 1](screenshots/home.png)
-![Screenshot 2](screenshots/modal.png)
-![Screenshot 3](screenshots/phone.png)
+<p align="center">
+  <img src="screenshots/home.png" alt="Screenshot 1" width="400px">
+</p>
+
+<p align="center">
+  <img src="screenshots/modal.png" alt="Screenshot 2" width="400px">
+</p>
+
+<p align="center">
+  <img src="screenshots/phone.png" alt="Screenshot 3" width="400px">
+</p>
 
 ## Access the App
 
