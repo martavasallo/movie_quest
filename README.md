@@ -6,7 +6,7 @@ Welcome to MovieQuest App! This application enables users to search for movies a
 
 <div style="display:flex; justify-content:center;">
   <img src="screenshots/home.png" alt="Screenshot 1" style="width:400px; height:auto; align-self:center;">
-  <img src="screenshots/phone.png" alt="Screenshot 2" style="width:150px; height:auto; align-self:center;">
+  <img src="screenshots/phone.png" alt="Screenshot 2" style="width:150px; height:auto; align-self:center; padding:15px">
 </div>
 
 ## Access the App
