@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MovieQuest</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header id="logo">
+        <h1><span class="logo-movie" id="slide-movie">Movie</span><span class="logo-quest" id="slide-quest">Quest</span></h1>
+      </header>
+      <div class="row justify-content-center mb-5">
+        <div class="col-9 col-md-5">
+          <form id="search-movies">
+            <nav class="form-group">
+              <div class="d-flex justify-content-center">
+                <input type="text" id="movie-name" class="form-control col-10" placeholder="Movie title..." value="" autofocus>
+                <span class="tooltip custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Type to search">Type a movie</span>
+                <input type="submit" value="Search" class="btn ms-2">
+              </div>
+            </nav>
+          </form>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" id="carousel-inner">
+
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div id="search-results">
+        <!-- Display Results for: -->
+      </div>
+
+      <main class="row" id="movie-cards">
+        <!--  Displaying movie posters here -->
+      </main>
+    </div>
+
+    <!-- Modal window movie information -->
+    <dialog class="modal" id="dialog">
+      <div>
+        <button class="close-modal" type="button">&times;</button>
+      </div>
+      <div class="container modal-content">
+        <div class="row">
+          <div class="col-sm-5 d-none d-sm-block" id="left-modal">
+            <img src="" alt="" class="img-fluid">
+          </div>
+          <div class="col-sm-7 d-flex align-items-center" id="right-modal">
+            <div style="width: 100%;">
+              <h4 class="pb-1 text-center info-heading">Title</h4>
+              <h6 class="pb-3 text-center"><i class="fa-solid fa-star"></i>Rating</h6>
+              <div class="pb-2 text-center type-runtime">
+                <span class="info-span">Type</span>
+                <span class="info-span">Seasons</span>
+              </div>
+              <div class="genre">
+                <div>Genre 1</div><span> • </span><div>Genre 2</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-3" id="bottom-modal">
+
+            <div class="boxes d-flex justify-content-center justify-content-around">
+              <span class="box-rated">Rated</span>
+              <span class="box-year">Year</span>
+              <span class="box-runtime">Runtime</span>
+            </div>
+
+            <p><span class="info-heading">Plot:</span> <span class="info info-plot">Plot</span></p>
+            <p><span class="info-heading">Director:</span> <span class="info info-director">Director</span></p>
+            <p><span class="info-heading">Cast:</span> <span class="info info-cast">Cast</span></p>
+            <p><span class="info-heading">Country:</span> <span class="info info-country">Country</span></p>
+            <p><span class="info-heading">Awards: </span> <span class="info info-awards">Awards</span></p>
+          </div>
+        </div>
+      </div>
+
+    </dialog>
+
+    <div class="overlay"></div>
+
+    <script src="lib/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
